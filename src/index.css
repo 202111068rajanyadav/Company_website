@@ -1,0 +1,409 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as necessary */
+  overflow: hidden;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero.active {
+  opacity: 1;
+}
+
+.hero-text {
+  position: absolute;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for legibility */
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+}
+
+
+/* Carousel controls */
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: -80%;
+  height: 100%;
+}
+
+.slider button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+
+/*   Why.css */
+
+.why-container {
+  text-align: center;
+  padding: 50px;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.why-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.why-card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow on hover */
+}
+
+.why-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+
+/* what.css */
+
+.what-container {
+  text-align: center;
+  padding: 50px;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.what-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.what-card {
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the first row of cards */
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.explore-btn {
+  background-color: #3a23ae81;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #3a23ae81;
+}
+
+/* Case studies section without hover effects */
+.case-studies-section {
+  background-color: #f4f4f4;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 93%;
+  margin-left: 50px;
+}
+
+.case-studies-grid {
+  display: flex;
+  justify-content: center;
+  /* max-width: 800px; Adjust this width to reduce the overall card size */
+  gap: 20px;
+}
+
+.case-study-btn {
+  background-color: #3a23ae81;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.case-study-btn:hover {
+  background-color: #3a23ae81;
+}
+
+
+/* map.css */
+
+.map-container {
+  text-align: center;
+  padding: 50px 0; /* Top and bottom padding only, removing left-right padding */
+  width: 100%; /* Ensures the container takes full width */
+  box-sizing: border-box; /* Includes padding in the element's total width */
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.map-image-wrapper {
+  position: relative;
+  width: 100%; /* Ensures wrapper takes full width */
+  max-width: 100%; /* Ensures maximum width does not exceed 100% */
+  margin: 0 auto;
+}
+
+.world-map {
+  width: 100%; /* Map image will now take full width of its parent */
+  height: 350px; /* Maintains aspect ratio */
+  border-radius: 10px;
+  display: block; /* Removes any space below the image */
+}
+
+.location {
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+
+.marker {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  left: 50%; /* Centers marker */
+  transform: translateX(-50%); /* Fine-tune centering */
+}
+
+.marker::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 2px;
+  height: 10px;
+  background-color: red;
+  transform: translateX(-50%);
+}
+
+.location span {
+  margin-top: 10px;
+  display: block;
+}
+
+
+
+/* about.css  Import the CSS file for styling */
+.about-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  position: relative;
+}
+
+.about-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* This centers the column alignment while maintaining space around */
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  width: 22.5%; /* Adjusted width for smaller card size */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  margin-top: 20px; /* Space between cards */
+}
+
+.card:nth-child(odd) { /* Odd cards on the left */
+  align-self: flex-start; /* Aligns to the start of the flex container */
+}
+
+.card:nth-child(even) { /* Even cards on the right */
+  align-self: flex-end; /* Aligns to the end of the flex container */
+}
+
+.icon {
+  height: 180px;
+  width: 150px;
+}
+
+.lineDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.line {
+  background-color: #4B8095;
+  width: 4px;
+
+  z-index: -1; /* Ensures the line does not cover cards or icons */
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%; /* Full width on smaller screens */
+    position: relative;
+    left: 0;
+    right: 0;
+    align-self: center; /* Centers cards on small screens */
+  }
+
+  .icon {
+    left: 50%; 
+  }
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  
+}
+
+.container {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+
+}
+
+.container-1 {
+  text-align: left;
+ 
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .icon {
+  width: 200px;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  /* /* align-items: center; / */
+ }
+
+ .icon img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+} 
+
+.line {
+  width: 2px;
+  height: 100px;
+  background-color: #ddd;
+  margin-top: 10px;
+}
+
+.empty-container {
+  /* Empty container for future use */
+}
+.sabkaPAPA{
+
+  margin-left: 10%;
+  margin-right: 10%;
+}

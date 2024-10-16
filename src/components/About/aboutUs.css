@@ -1,0 +1,51 @@
+.about-us-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 36px;
+  color: #1AB7D1; /* Adjust this color as per your theme */
+  margin-bottom: 30px;
+}
+
+.who-we-are-section, .vision-section {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  color: #1AB7D1;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.section-content {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0 20px;
+}
+
+/* You can include specific styles for responsiveness */
+@media (max-width: 768px) {
+  .about-us-container {
+    width: 95%;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-content {
+    font-size: 16px;
+  }
+}

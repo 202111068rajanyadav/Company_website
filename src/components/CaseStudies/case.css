@@ -1,0 +1,79 @@
+.case-study-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.case-study-title {
+  text-align: center;
+  color: #3CB2C1; /* Adjust this color as per your theme */
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Outer rectangle with black border */
+.card-container {
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+
+/* Card hover effect */
+.card {
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  background-color: #3CB2C1; /* Same color as in the title */
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: -20px -20px 10px -20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-content ul {
+  list-style-type: square;
+  margin: 10px 0;
+  padding-left: 18px;
+}
+
+.benefits-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.benefits-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Adjusting dots and spacing */
+.benefits-list {
+  list-style-position: inside; /* Align dots with text */
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4; /* Reduce space between lines */
+  margin: 0; /* Remove margin for tight spacing */
+  padding: 0;
+}

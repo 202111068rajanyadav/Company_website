@@ -1,0 +1,36 @@
+/* Card.css */
+
+.container {
+  text-align: center;
+  margin: auto;
+  padding: 20px; /* Padding around the container */
+}
+
+.page-title {
+  font-size: 32px;
+  color: #2c96ad;
+  margin-bottom: 20px; /* Padding between the title and the card */
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 1000px; /* Increase width to 800px */
+  margin: 0 auto 50px auto; /* Adds space below the card */
+  cursor: pointer;
+  width: 90%; /* Make the width responsive */
+}
+
+.card-content {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card:hover {
+  /* transform: translateY(-10px); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

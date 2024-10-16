@@ -1,0 +1,96 @@
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Keep the dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content styled as a card with reduced height */
+.modal-content.card {
+    margin-top: 60px;
+  background-color: white; /* Ensure the card background is white */
+  padding: 15px; /* Reduced padding to make the card smaller */
+  border-radius: 10px;
+  width: 60%; /* Adjust card size */
+  max-width: 450px; /* Set a max width */
+  max-height: 100vh; /* Reduced max-height for the card */
+  border: 1px solid #ccc; /* Give the card a border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Allow scroll if necessary */
+}
+
+.modal-content h2 {
+  font-size: 18px; /* Reduced font size */
+  margin-bottom: 10px; /* Smaller margin */
+  color: #333;
+  text-align: center;
+}
+
+/* Form labels and inputs */
+.quote-form label {
+  font-size: 14px; /* Reduced label size */
+  margin-bottom: 0px; /* Reduced margin */
+  color: rgb(0, 0, 0);
+  display: block;
+}
+
+.quote-form input,
+.quote-form textarea,
+.quote-form select {
+  width: 100%;
+  padding: 2px; /* Reduced padding */
+  margin-bottom: 5px; /* Reduced margin */
+  border-radius: 6px; /* Reduced radius */
+  border: 1px solid #ddd;
+  font-size: 12px; /* Reduced font size */
+}
+
+.quote-form textarea {
+  resize: vertical;
+  rows: 3; /* Reduced the default number of rows */
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px; /* Reduced button size */
+  border: none;
+  border-radius: 6px; /* Smaller radius */
+  cursor: pointer;
+  font-size: 13px; /* Smaller font size */
+}
+
+/* Close button */
+.close-button.blue {
+  background-color: #155c99;
+  color: white;
+  padding: 8px 16px; /* Reduced button size */
+  border: none;
+  border-radius: 6px; /* Smaller radius */
+  cursor: pointer;
+  font-size: 13px; /* Smaller font size */
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}

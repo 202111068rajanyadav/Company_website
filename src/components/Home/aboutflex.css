@@ -1,0 +1,19 @@
+/* Define the keyframe animation */
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Initially, the image does not rotate */
+.rotate {
+  transition: transform 0.9s ease; /* Smooth transition when hovering */
+}
+
+/* On hover, apply the rotate animation */
+.rotate:hover {
+  animation: rotate360 0.8s linear forwards; /* Starts rotating when hovered */
+}

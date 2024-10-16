@@ -1,0 +1,87 @@
+/* ContactUs.css */
+
+.contact-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-us-title {
+  font-size: 36px;
+  color: #2c96ad;
+  margin-bottom: 20px;
+}
+
+.contact-us-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 80%;
+}
+
+.contact-card, .info-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%; /* Each card takes half of the width */
+   border: 1px solid rgba(138, 130, 130, 0.468); /* Added black border */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form .submit-button {
+  padding: 10px 20px;
+  background-color: #2c96ad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+  background-color: #2389a3;
+}
+
+.info-card h3, .info-card h4 {
+  color: #2c96ad;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.email-button {
+  background-color: #2c96ad;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.email-button:hover {
+  background-color: #2389a3;
+}

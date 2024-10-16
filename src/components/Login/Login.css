@@ -1,0 +1,66 @@
+/* Center the login card in the viewport */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Card styling */
+.login-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px; /* Set card width */
+}
+
+/* Heading styling */
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.login-card input {
+  width: 100%; /* Full width */
+  padding: 10px;
+  margin: 10px 0; /* Vertical spacing */
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Remember Me section */
+.remember-me {
+    display: flex;                     /* Use flexbox for alignment */
+    align-items: center;              /* Center vertically */
+    margin-top: 20px;                 /* Space above the checkbox */
+}
+
+.remember-me input[type="checkbox"] {
+    width: 20px;                       /* Width of the checkbox */
+    height: 20px;                      /* Height of the checkbox */
+    margin-right: 10px;                /* Space between checkbox and label */
+    cursor: pointer;                   /* Change cursor to pointer on hover */
+}
+
+.remember-me label {
+    font-size: 16px;                  /* Font size for the label */
+    color: #333;                      /* Text color for the label */
+}
+
+/* Button styling */
+.login-button {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  width: 100%; /* Full width */
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
